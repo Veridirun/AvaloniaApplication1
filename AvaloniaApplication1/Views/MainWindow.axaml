@@ -1,0 +1,33 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:AvaloniaApplication1.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="320" d:DesignHeight="385"
+		Width="320" Height="385" 
+        x:Class="AvaloniaApplication1.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="AvaloniaApplication1">
+    <Canvas>
+		<Button Name="OutputText" Width="300" Height="75" Canvas.Left="10" Canvas.Top="10" Content="{Binding FieldText}"></Button>
+		<Button Name="buttonI" Command="{Binding AddStringI}" Content="I" Width="75" Height="75" Canvas.Left="10" Canvas.Top="85"></Button>
+	    <Button Name="buttonV" Command="{Binding AddStringV}" Content="V" Width="75" Height="75" Canvas.Left="10" Canvas.Top="160"></Button>
+	    <Button Name="buttonX" Command="{Binding AddStringX}" Content="X" Width="75" Height="75" Canvas.Left="10" Canvas.Top="235"></Button>
+	    <Button Name="buttonL" Command="{Binding AddStringL}" Content="L" Width="75" Height="75" Canvas.Left="10" Canvas.Top="310"></Button>
+		
+		<Button Name="buttonC" Command="{Binding AddStringC}" Content="C" Width="75" Height="75" Canvas.Left="85" Canvas.Top="85"></Button>
+	    <Button Name="buttonD" Command="{Binding AddStringD}" Content="D" Width="75" Height="75" Canvas.Left="85" Canvas.Top="160"></Button>
+	    <Button Name="buttonM" Command="{Binding AddStringM}" Content="M" Width="75" Height="75" Canvas.Left="85" Canvas.Top="235"></Button>
+	    <Button Name="buttonCE" Command="{Binding ClearString}" Content="CE" Width="75" Height="75" Canvas.Left="85" Canvas.Top="310"></Button>
+		
+		<Button Name="buttonAdd" Command="{Binding SetOperationAdd}" Content="+" Width="75" Height="75" Canvas.Left="160" Canvas.Top="85"></Button>
+	    <Button Name="buttonSub" Command="{Binding SetOperationSub}" Content="-" Width="75" Height="75" Canvas.Left="160" Canvas.Top="160"></Button>
+	    <Button Name="buttonMul" Command="{Binding SetOperationMul}" Content="*" Width="75" Height="75" Canvas.Left="160" Canvas.Top="235"></Button>
+	    <Button Name="buttonDiv" Command="{Binding SetOperationDiv}" Content="/" Width="75" Height="75" Canvas.Left="160" Canvas.Top="310"></Button>
+		
+		<Button Name="buttonEqual" Command="{Binding Calculate}" Content="=" Width="75" Height="300" Canvas.Left="235" Canvas.Top="85"></Button>
+		<TextBlock Text="{Binding Operation}" Canvas.Right="15" Canvas.Top="10"/>
+	</Canvas>
+	
+
+</Window>

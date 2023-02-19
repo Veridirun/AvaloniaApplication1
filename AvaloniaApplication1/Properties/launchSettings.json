@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "AvaloniaApplication1": {
+      "commandName": "Project",
+      "hotReloadEnabled": false
+    }
+  }
+}
